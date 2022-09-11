@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Modules</title>
+    <script src="add.js"></script>
+    <script src="classes.js"></script>
+    <script type="module" src="mobile.js"></script>
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <h1>Welcome To JavaScript</h1>
+    <script>
+        function show() {
+            var j = "J a local vari of Outer Function";
+            document.write(j + "<br>");
+            function innerFun() {
+                var k =  "K a local vari of Inner function";
+                document.write(k + "<br>");
+                document.write(j + "<br>");
+            }
+            innerFun();
+        }
+        show();
+    </script>
+</body>
+</html>
